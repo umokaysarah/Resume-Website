@@ -1,5 +1,5 @@
 .navbar-dark {
-    background-color: rgb(66, 107, 126);
+    background-color: rgb(52, 55, 58);
 }
 
 .header{
@@ -13,7 +13,7 @@
 .bg {
     background-color: rgb(243, 227, 242);
     background-image: url("/assets/main.jpg");
-    min-height: 400px;
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +31,26 @@ a {
     color: black;
 }
 
-.border {
+a:hover {
+    color: rgb(32, 32, 32);
+}
+
+.front {
+    min-height: 600px;
+}
+
+.first {
     background-color: rgb(245, 235, 223);
+    background-color:  rgb(66, 107, 126);
+}
+
+.second {
+    background-color: rgb(52, 110, 98);
+    
+   
+}
+
+.carousel {
+    background-color:rgb(193, 226, 219);
+    
 }

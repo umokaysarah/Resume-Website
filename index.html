@@ -13,28 +13,65 @@
 <body>
     <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
         <div class = "container">
-            <button class = "navbar-toggler" type="button data-toggle="collapse" data-target="#Navbar">
+            <button class = "navbar-toggler mr-3" type="button data-toggle="collapse" data-target="#Navbar">
                 <span class ="navbar-toggler-icon"></span>
             </button>
             <a class = "navbar-brand mr-auto sarah" href="./index.html">Sarah Gerard</a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class = "navbar-nav mr-auto">
                     <li class =  "nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class =  "nav-item"><a class="nav-link" href="./projects.html">Projects</a></li>
+                    <li class =  "nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class =  "nav-item"><a class="nav-link" href="./posts.html">Posts</a></li>
-                    <li class =  "nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class =  "nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class =  "nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <div class="row row-content mt-5">
-            <div class="col-sm-4 p-5 border">
-                <h3>About Me</h3>
-                <p>I'm 3rd year student at the University of California Davis, studying computer science with a minor in psychology. I grew up in the Sacramento Area.</p></div>
-            <div class="col-sm-8 bg "></div>
+    <div class="container-fluid" id="about">
+        <div class="row row-content mt-5 front first">
+            <div class="col-sm-6 p-4 text-center align-self-center">
+                <h3 style="color:black; font-family: Lucida Console;">About</h3>
+                <p>I'm 3rd year student at the University of California Davis, studying computer science with a minor in psychology.</p></div>
+            <div class="col-sm-6 bg "></div>
+        </div>
+   
+    </div>
+
+    <div class="container-fluid" id="projects">
+        <div class="row row-content front second">
+            <div class="col-sm-6 text-center align-self-center">
+
+                
+                <div id="projCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <p>First slide</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p>Second slide</p>
+                      </div>
+                      <div class="carousel-item">
+                        <p>Third slide</p>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#projCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#projCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            
+                
+            </div>
+            <div class="col-sm-6 text-center align-self-center">
+                <a class = "navbar-brand mr-auto sarah" href="./index.html">Projects</a>
+                <p>- What I've been working on as a student -</p>
+            </div>
         </div>
    
     </div>
