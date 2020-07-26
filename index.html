@@ -6,54 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Sarah is Cool</title>
+    <title>Sarah's Website</title>
 </head>
 
-<body>
-    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class = "container">
-            <button class = "navbar-toggler mr-3" type="button data-toggle="collapse" data-target="#Navbar">
-                <span class ="navbar-toggler-icon"></span>
-            </button>
-            <a class = "navbar-brand mr-auto sarah" href="./index.html">Sarah Gerard</a>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class = "navbar-nav mr-auto">
-                    <li class =  "nav-item active"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class =  "nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class =  "nav-item"><a class="nav-link" href="./posts.html">Posts</a></li>
-                    <li class =  "nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class =  "nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body>  
+    <div class="nav align-items-center">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a> 
+    </div>
 
-    <div class="container-fluid" id="about">
-        <div class="row row-content mt-5 front first">
-            <div class="col-sm-6 p-4 text-center align-self-center">
-                <h3 style="color:black; font-family: Lucida Console;">About</h3>
-                <p>I'm 3rd year student at the University of California Davis, studying computer science with a minor in psychology.</p></div>
-            <div class="col-sm-6 bg "></div>
+    <div id="intro">
+        <h1>Hi! I'm Sarah</h1>
+    </div>
+
+    <div id="about">
+        <div class="row align-items-center " id="section">
+            <div class="col-sm-6 text-center" >
+                <p>I'm 3rd year student at the University of California Davis, studying computer science with a minor in psychology. Right now I'm focusing on growing my skills, learning about the industry, and gaining as much experience as possible.</p></div>
+            <div class="col-sm-6  text-center rightAbout"> 
+                <img class="profile-pic" src="assets/main.jpg">
+            </div>
         </div>
    
     </div>
 
-    <div class="container-fluid" id="projects">
-        <div class="row row-content front second">
-            <div class="col-sm-6 text-center align-self-center">
+    <div id="experience">
+        <div id="section">
+            <h1>Experience</h1>
+            <h3>My work with BitProject</h3>
+            <p class="subtitle">BitProject is a non-profit, open-source organization founded at UC Davis in 2019 <a  href="https://www.bitproject.org/">Learn more here</a></p>
+            
+            <div class="row text-center">
+                <div class="col ">
+                    <h4>Managing Development Teams</h4>
+                    <p>As a leader I managed 2 teams of 4-5 developers in the creation of 2 different websites for charity organizations. I guided development and communicated with our charities in order to meet their website's needs.</p>
+                </div>
+                <div class="col">
+                    <h4>Workshops</h4>
+                    <p>I helped create and host 2 workshops for UC Davis students. In my Pusher workshop I worked with a Pusher developer to help create an interactive, fun workshop. My data structures workshop was given completely remotely due to Covid-19.</p>
+                    <a href="https://docs.google.com/presentation/d/15d6alxi2LMSWkO9k4UosQEurGuxQPtVP4WD57G5m-sY/edit?usp=sharing">Pusher Workshop Slides</a> |
+                    <a href="https://docs.google.com/presentation/d/1KgkVA-6ZLurExPBUde1ThDYvrYIpBZIOZjCiPB9o9M4/edit?usp=sharing">Intro to Data Structures Workshop Slides</a>
+                </div>
+                <div class="col">
+                    <h4>Creating Curriculum</h4>
+                    <p>I reviewed and edited computer science based curriculum created by my developer teams. Extensive use of github and project organization</p>
+                </div>
+            </div>
+            
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>NodeJs</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+
+    <div id="projects">
+        <div class="row row-content" id="section">
+            <div class="col-sm-6 text-center align-self-center leftProj">
 
                 
                 <div id="projCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <p>First slide</p>
+                        <h4>Making my own resume website</h4>
+                        <p>This website you're looking at is the first full website that I've made by myself. I've learned a lot as I am mostly self-taught when it comes to HTML/CSS. I hope to keep updating it and improving it as my skills increase.</p>
+                        <a href="github.com">Look at my code here</a>
+                       </div>
+                      <div class="carousel-item">
+                        <p>Activism website template</p>
                       </div>
                       <div class="carousel-item">
-                        <p>Second slide</p>
+                        <p>C++ BattleShip</p>
                       </div>
                       <div class="carousel-item">
-                        <p>Third slide</p>
+                        <p>My first App</p>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#projCarousel" role="button" data-slide="prev">
@@ -69,33 +108,16 @@
                 
             </div>
             <div class="col-sm-6 text-center align-self-center">
-                <a class = "navbar-brand mr-auto sarah" href="./index.html">Projects</a>
-                <p>- What I've been working on as a student -</p>
+                <h2>Projects</h2>
+                <p>Some things I've been working on as a student and amateur developer</p>
             </div>
         </div>
    
     </div>
 
-
-    <footer class="footer">
-        <div class = "container">
-            <div class = "row">             
-                <div class = "col-4 offset-1 col-sm-2 mt-2">
-                    <ul class = "list-unstyled"> 
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./posts.html">Posts</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-        
-
-    </footer>
+    <div id="contact" class="text-center">
+        <h2>Reach out anytime!</h2>
+    </div>
 
 
    
