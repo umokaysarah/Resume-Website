@@ -13,7 +13,7 @@ a:hover{
     color: black;
 }
 #section{
-    height: 120vh;
+    min-height: 120vh;
 }
 #section p{
     font-size: 23px;
@@ -63,42 +63,60 @@ a:hover{
 }
 .rightAbout{
     background-color: rgb(185, 194, 194);
-    height: 100%;
+    height: 120vh;
 
 
 }
 
 #experience{
-    background-color:rgb(248, 222, 126);
-    padding: 10%;
+    background-color:rgb(125, 158, 173);
+    padding: 5% 10% 0% 10%;
     color: rgb(51, 51, 51);
 }
 
 #experience h1{
     font-size: 43px;
-    padding-bottom: 5%;
-    color: rgb(51, 51, 51);
-    border-bottom: rgb(255, 254, 239);
+    color: rgb(36, 36, 36);
     border-bottom-style: solid;
+    border-bottom-color: rgb(36, 36, 36);
+}
+#experience h3{
+    color: rgb(36, 36, 36);
+    padding-top: 3%;
 }
 #experience .subtitle{
     font-size: 17px;
-    color: rgb(94, 94, 94);
+    color: rgb(56, 56, 56);
+    border-top-style: double;
+    padding-top: 1%;
 }
 #experience p{
     font-size: 18px;
 }
 #experience .col{
-    background-color:rgb(255, 254, 239);
+    background-color:rgb(223, 238, 233);
     margin: 4px;
     padding: 3%;
 }
-
+#experience .row{
+    border-bottom-style: solid;
+    border-bottom-color: rgb(36, 36, 36);
+    border-top-style: solid;
+    border-top-color: rgb(36, 36, 36);
+}
 .skills{
-    padding-top: 5%;
+    padding: 3% 10%;
+    background-color:rgb(223, 238, 233);
+}
+ul{
+    list-style: none;
+    font-weight: 600;
 }
 #projects {
     background-color:  rgb(66, 107, 126);
+}
+#projects p{
+    font-size: 20px;
 }
 
 .leftProj {
@@ -106,7 +124,7 @@ a:hover{
     height: 120vh;
 }
 .carousel{
-    margin-top: 35%;
+    margin-top: 30%;
    
 }
 .carousel-item{
@@ -115,9 +133,31 @@ a:hover{
     margin-left: 15px;
     padding: 5% 12% 5% 10%;
 }
+.carousel-item p{
+    border-top: double;
+}
 
 #contact{
-    background-color: rgb(209, 223, 22);
+    background-color: rgb(209, 223, 220);
     padding: 5%;
+}
+#contact button{
+    width: 200px;
+}
+button{
+    border: none;
+    background-color: rgb(151, 160, 160);
+    height: 50px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+button:hover{
+    background-color: rgb(117, 124, 124);
+}
+button:focus{
+    outline: none;
+}
+.fa{
+    padding: 2%;
 }
 
